@@ -1,0 +1,7 @@
+description = "Library for working with Buchi automata."
+version = "%%VERSION_NUM%%"
+requires = "bits"
+archive(byte) = "buchi_automaton.cma"
+archive(native) = "buchi_automaton.cmxa"
+plugin(byte) = "buchi_automaton.cma"
+plugin(native) = "buchi_automaton.cmxs"

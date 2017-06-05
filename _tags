@@ -1,0 +1,4 @@
+true : bin_annot, safe_string, package(bytes), package(bits), ppx(ocamlfind ocamllint/ppx_lint.native)
+
+<src> : include
+<test> : include

@@ -1,0 +1,23 @@
+opam-version: "1.2"
+maintainer: "Vasil Diadov <vasil.s.d@gmail.com>"
+authors: ["Vasil Diadov <vasil.s.d@gmail.com>"]
+homepage: "https://github.com/vasil-sd/ocaml-ba"
+doc: "https://vasil-sd.github.io/ocaml-ba/doc"
+license: "ISC"
+dev-repo: "https://github.com/vasil-sd/ocaml-ba.git"
+bug-reports: "https://github.com/vasil-sd/ocaml-ba/issues"
+tags: []
+available: [ ocaml-version >= "4.01.0"]
+depends:
+[
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "topkg" {build & >= "0.9.0"}
+  "bits"
+]
+depopts: []
+build:
+[[
+  "ocaml" "pkg/pkg.ml" "build"
+          "--dev-pkg" "%{pinned}%"
+]]
